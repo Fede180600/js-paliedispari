@@ -8,6 +8,10 @@ const reverseWord = palindroma();
 console.log("Parola inserita dall'utente al contrario:", reverseWord);
 
 // FUNCTION 
+/**
+ * Description
+ * @returns {string} // La parola inserita dall'utente al contrario
+ */
 function palindroma () {
     // Variabili che mi servono
     let reverseWord = '';
