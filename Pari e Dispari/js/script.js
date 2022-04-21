@@ -38,12 +38,19 @@ console.log(evenOrOddResult);
  * @returns {string} -> if nummbersSum is even or odd
  */
 function evenOrOdd () {
-    let myEvenOrOdd = "Dispari"
+    let myEvenOrOdd = "dispari"
     if (numbersSum % 2 == 0) {
-        myEvenOrOdd = "Pari";
+        myEvenOrOdd = "pari";
     }
 
     return myEvenOrOdd;
     
 }
 // Dichiariamo chi ha vinto 
+let winner = "Ha vinto il computer, riprova!";
+
+if (userChoice === evenOrOddResult) {
+    winner = "Complimenti hai vinto!"
+}
+
+console.log(winner);
