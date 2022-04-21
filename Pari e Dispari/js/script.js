@@ -7,9 +7,9 @@
 // Chiedo all'utente di inserire pari o dispari 
 // Chiedo all'utente di inserire un numero da 1 a 5
 const userChoice = prompt("Scegli 'pari' o 'dispari'");
-const userNumber = parseInt(prompt("Dimmi un numero da 1 a 5"));
+const userNumb = parseInt(prompt("Dimmi un numero da 1 a 5"));
 console.log("L'utente ha scelto:", userChoice);
-console.log("L'utente ha giocato:", userNumber);
+console.log("L'utente ha giocato:", userNumb);
 // Genero un numero random (da 1 a 5) per il computer (funzione)
 const computerNumb = generateRndInteger(1, 5);
 console.log("Il computer ha giocato:", computerNumb);
@@ -24,7 +24,8 @@ function generateRndInteger(min, max) {
     return randNumb;
 }
 // Sommo i due numeri 
-
+const numbersSum = userNumb + computerNumb;
+console.log("Somma delle giocate =", numbersSum);
 // Stabilisco se la somma è pari o dispari (funzione)
 
 // Dichiariamo chi ha vinto 
