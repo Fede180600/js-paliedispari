@@ -13,6 +13,8 @@ console.log("L'utente ha giocato:", userNumb);
 // Genero un numero random (da 1 a 5) per il computer (funzione)
 const computerNumb = generateRndInteger(1, 5);
 console.log("Il computer ha giocato:", computerNumb);
+
+// FUNCTION
 /**
  * Description
  * @param {Number} min -> minimum limit (1)
@@ -27,5 +29,21 @@ function generateRndInteger(min, max) {
 const numbersSum = userNumb + computerNumb;
 console.log("Somma delle giocate =", numbersSum);
 // Stabilisco se la somma è pari o dispari (funzione)
+const evenOrOddResult = evenOrOdd();
+console.log(evenOrOddResult);
+// FUNCTION 
+/**
+ * Description
+ * @param {Number} numbersSum -> somma dei numeri giocati da utente e computer
+ * @returns {string} -> if nummbersSum is even or odd
+ */
+function evenOrOdd () {
+    let myEvenOrOdd = "Dispari"
+    if (numbersSum % 2 == 0) {
+        myEvenOrOdd = "Pari";
+    }
 
+    return myEvenOrOdd;
+    
+}
 // Dichiariamo chi ha vinto 
