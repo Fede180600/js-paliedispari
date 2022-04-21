@@ -4,12 +4,30 @@
 // Chiedo all'utente di inseirre un parola 
 const userWord = prompt("Dimmi una parola");
 console.log("Parola scritta dall'utente:", userWord);
+const reverseWord = palindroma();
+console.log("Parola inserita dall'utente al contrario:", reverseWord);
 
-// Tasformo la parola al contrario
-for (let i = userWord.length - 1; i >= 0; i--) {
-    const elementReverseWord = userWord[i];
-    console.log(elementReverseWord);
+// FUNCTION 
+function palindroma () {
+    // Variabili che mi servono
+    let reverseWord = '';
+    // Tasformo la parola al contrario
+    for (let i = userWord.length - 1; i >= 0; i--) {
+        reverseWord += userWord[i];
+    }
+    return reverseWord;
     
 }
+// Variabile se è palindroma o no
+if (reverseWord === userWord) {
+    console.log("La parola inserita è palindroma");
+} else {
+    console.log("La parola inserita non è palindroma");
+        
+}
+
+
+
+
 
 
