@@ -7,9 +7,14 @@
 // Chiedo all'utente di inserire pari o dispari 
 // Chiedo all'utente di inserire un numero da 1 a 5
 const userChoice = prompt("Scegli 'pari' o 'dispari'");
-const userNumb = parseInt(prompt("Dimmi un numero da 1 a 5"));
+let userNumb = parseInt(prompt("Dimmi un numero da 1 a 5"));
 console.log("L'utente ha scelto:", userChoice);
 console.log("L'utente ha giocato:", userNumb);
+if (userNumb < 1 && userNumb > 5) {
+    alert("Numero non valido");
+    userNumb = parseInt(prompt("Dimmi un numero da 1 a 5"));
+    console.log(userNumb, "Numero non valido");
+}
 // Genero un numero random (da 1 a 5) per il computer (funzione)
 const computerNumb = generateRndInteger(1, 5);
 console.log("Il computer ha giocato:", computerNumb);
